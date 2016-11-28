@@ -10,7 +10,23 @@ public class ex03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scn = new Scanner ( System.in ) ;
+		int n = scn.nextInt ( ) ;
+		fun ( n ) ;
 	}
-
+public static void fun( int a ) {
+		int b = a / 2 ;
+		int c = 0 ;
+		for ( int i = 1 ; i <= b ; i ++ ) {
+		if ( a % i == 0 ) {
+			System.out.println ( i ) ;
+			c ++ ;
+	}
+}
+		if ( c == 1 ) {
+			System.out.println ( "True" ) ;
+	}else{
+			System.out.println ( "False" ) ;
+		}
+	}
 }

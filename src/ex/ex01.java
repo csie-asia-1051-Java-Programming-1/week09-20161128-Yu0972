@@ -18,9 +18,25 @@ public class ex01 {
 		int n = scn.nextInt ( ) ;
 		Random rnd = new Random ( ) ;
 		rnd.setSeed( n ) ;
-		for ( int a = 0 ; a <= 6 ; a ++ ) {
-			int data [ ] = new int [ a ] ;
-			data [ a ] = rnd.nextInt ( 42 ) + 1 ; 
+		int data [ ] = new int [ 6 ] ;
+		boolean x = false ;
+		int i = 0 ;
+		int j = i ;
+		while ( i < 6 ) {
+			data [ i ] = rnd.nextInt ( 42 ) + 1 ;
+			j = i - 1 ;
+			while ( x == false && j >= 0 ) {
+				if ( data [ i ] == data [ j ] ) {
+					x = true ;
+}
+				j -- ;
+}
+			if ( x == false ) {
+				i ++ ;
+	}
+}
+		for ( int k = 0 ; k < 6 ; k ++ ) {
+			System.out.print ( data [ k ] + "  " ) ;
 		}
 	}
 }
